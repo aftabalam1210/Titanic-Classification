@@ -27,7 +27,7 @@ Usage
 Clone the repository to your local machine:
 bash
 Copy code
-git clone https://github.com/your-username/titanic-data-prediction.git
+git clone https://github.com/aftabalam1210/Titanic-Classification.git
 cd titanic-data-prediction
 Install the required dependencies using pip:
 bash
