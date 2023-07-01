@@ -1,17 +1,18 @@
 # Titanic-Classification
-This repository contains code and data for predicting stock prices using Long Short-Term Memory (LSTM) networks. The LSTM model is a type of recurrent neural network (RNN) that has proven effective in capturing sequential patterns, making it suitable for time-series forecasting tasks like stock price prediction.
+
+
+
+This repository contains code and data for predicting the survival status of passengers on the Titanic using machine learning algorithms. The dataset used in this project is the famous "Titanic: Machine Learning from Disaster" dataset, available on Kaggle.
 
 Dataset Description
-The dataset used in this project contains historical stock price data for a particular company or stock index. It includes daily or hourly records of stock prices along with various other features like volume, moving averages, and technical indicators.
+The dataset consists of two CSV files:
 
-The dataset is divided into two parts:
+train.csv: This file contains the training data that will be used to build and train our predictive model. It includes information on various passengers, such as their age, gender, passenger class, number of siblings/spouses aboard, number of parents/children aboard, fare paid, and most importantly, whether they survived or not (the target variable).
 
-train.csv: This file contains the historical stock price data that will be used to train the LSTM model. It includes the stock prices over a specific time period, usually the past few years.
-
-test.csv: This file contains more recent stock price data for the same company or stock index. It is used to evaluate the performance of the trained LSTM model and assess how well it predicts future stock prices.
+test.csv: This file contains the test data on which we will apply our trained model to make predictions. It contains the same features as the training data but lacks the "Survived" column, which needs to be predicted.
 
 Objective
-The main objective of this project is to build an LSTM model that can accurately predict future stock prices based on the historical stock price data and other relevant features.
+The main goal of this project is to build a predictive model that can accurately predict whether a given passenger survived or not based on the available features. We will use various machine learning algorithms and techniques to accomplish this task.
 
 Dependencies
 To run the code in this repository, you'll need the following dependencies:
@@ -19,27 +20,33 @@ To run the code in this repository, you'll need the following dependencies:
 Python (>=3.6)
 pandas
 numpy
-tensorflow (or tensorflow-gpu for GPU acceleration)
-matplotlib
 scikit-learn
+matplotlib
+seaborn
 Usage
 Clone the repository to your local machine:
 bash
 Copy code
-git clone https://github.com/your-username/Stock-Prediction-LSTM.git
-cd Stock-Prediction-LSTM
+git clone https://github.com/your-username/titanic-data-prediction.git
+cd titanic-data-prediction
 Install the required dependencies using pip:
 bash
 Copy code
 pip install -r requirements.txt
-Prepare the dataset:
-
-Ensure you have the historical stock price data in train.csv and the more recent data in test.csv. Adjust the file names accordingly if needed.
-Explore the dataset, train the LSTM model, and make predictions by running the Jupyter notebook:
-
+Explore the dataset, train the model, and make predictions by running the Jupyter notebook:
 bash
 Copy code
-jupyter notebook Stock_Prediction_LSTM.ipynb
+jupyter notebook Titanic_Data_Prediction.ipynb
 Follow the instructions provided in the notebook to execute each cell and observe the results.
 Contribution
-If you wish to contribute to this project, feel free to open a pull request. We welcome any improvements, alternative approaches, or additional features that can enhance
+If you wish to contribute to this project, feel free to open a pull request. We welcome any improvements, bug fixes, or additional features that can enhance the predictive model's accuracy and performance.
+
+License
+This project is licensed under the MIT License.
+
+Acknowledgments
+We would like to express our gratitude to Kaggle for providing the Titanic dataset, which has been instrumental in advancing the field of machine learning.
+
+Note: The image used in this README.md (titanic.jpg) is for illustrative purposes only and is not part of the dataset. The actual data is provided in the CSV files mentioned above.
+
+Let's build an accurate Titanic survival prediction model together! Happy coding! 🚢🛳️
